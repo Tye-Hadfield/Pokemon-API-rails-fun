@@ -1,0 +1,22 @@
+
+<div class="Main">
+
+    <h1>Search for a Pokemon!</h1>
+
+    <% flash.each do |name,value | %>
+
+    <p><%= value %></p>
+
+    <% end %>
+ 
+    <%= form_for :searchedpokemon, url: "home/pokemon" do |form| %>
+      <%= form.text_field :name %>
+      <%= form.submit value="Search!"  %>
+    <% end  %>
+
+</div>
+
+
+
+
+

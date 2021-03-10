@@ -1,0 +1,13 @@
+
+<%= button_to "Search Another Pokemon", search_path, :method => "get" %>
+
+<h1>Name of Pokemon</h1>
+<p><%= @pokemon.name.capitalize  %></p>
+<img src=<%= @pokemon.sprites.front_default %> > 
+
+<h4>Hp of Pokemon</h4>
+   <%= @pokemon.stats[0].base_stat  %>
+<h4>Attack of Pokemon</h4>
+<%= @pokemon.stats[1].base_stat %>
+<h4>Defense of Pokemon</h4>
+<%= @pokemon.stats[2].base_stat  %>
